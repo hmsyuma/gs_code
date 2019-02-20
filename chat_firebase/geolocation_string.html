@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Map&amp;Geolocation</title>
+<style>
+body {
+  margin: 0;
+  padding: 0;
+}
+</style>
+</head>
+<body>
+
+<!-- MapArea 空のエリア　現在位置情報を表示する-->
+<div id="myMap"  style="width:500px;height:300px;"></div>
+<!-- ポイント①apのサイズは最後に設定されるため、styleで指定する必要 -->
+<!-- /MapArea -->
+
+<!-- jQuery&GoogleMapsAPI -->
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<!-- /jQuery&GoogleMapsAPI　ぽんと②　　マップ保見込み -->
+<script src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=Aln4By7nsng2y28RjLlcFPMYZSL_2Ffc9fAgCVSxZmxbm7qES-O7M81C3354ziC0' async defer></script>
+<script src='js/bmap.js' ></script>
+<script src='js/geolocation_string.js' ></script>
+
+
+</body>
+</html>

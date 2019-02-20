@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>Chatアプリ</title>
+
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<style>
+#output{
+    height:600px;/*ここはご自由に*/
+    width: 50%;/*ここはご自由に*/
+    overflow: auto;
+}
+</style>
+
+<!-- コンテンツ表示画面 -->
+
+<div id="output">
+    <!-- ヘッダー部分② -->
+    <div id="bms_chat_header">
+        <!--ステータス-->
+        <div id="bms_chat_user_status">
+            <!-- ステータスアイコン-->
+            <div id="bms_status_icon">●</div>
+            <!--ユーザー名-->
+            <div id="bms_chat_user_name">なんちゃてチャットアプリ</div>
+        </div>
+    </div>
+</div>
+
+<div>名前<input type="text" id="username"></div>
+<div  id="bms_send">
+<textarea id="text" row="5" cols="30"></textarea>
+<button id="send">送信</button>
+<button id="getmap">現在位置取得</button>
+<button id="Mymap">Mapの送信</button>
+</div>
+<!-- チャットの受送信 -->
+
+
+
+<!--/ コンテンツ表示画面 -->
+
+
+<!-- JQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!--** 以下Firebase **-->
+<script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+<!-- /jQuery&GoogleMapsAPI　ぽんと②　　マップ保見込み -->
+<script src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=Aln4By7nsng2y28RjLlcFPMYZSL_2Ffc9fAgCVSxZmxbm7qES-O7M81C3354ziC0' async defer></script>
+<!-- mapjsの参照 -->
+<script src="js/bmap.js" ></script>
+<!-- mapfnc.jsの参照 -->
+<script src="js/mapfnc.js"></script>
+<!-- <JS参照> -->
+<script src="js/chat.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
